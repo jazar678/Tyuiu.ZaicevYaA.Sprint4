@@ -7,14 +7,17 @@ namespace Tyuiu.ZaicevYaA.Sprint4.Task0.V20.Lib
     {
         public int GetMultEvenArrEl(int[] array)
         {
+            if (array == null || array.Length == 0)
+                return 0;
+
             int product = 1;
             bool hasEven = false;
 
-            foreach (int num in array)
+            for (int i = 0; i < array.Length; i++)
             {
-                if (num % 2 == 0)
+                if (array[i] % 2 == 0)
                 {
-                    product *= num;
+                    product *= array[i];
                     hasEven = true;
                 }
             }
