@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.ZaicevYaA.Sprint4.Tas
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.ZaicevYaA.Sprint4.Task0.V20.Lib", "Tyuiu.ZaicevYaA.Sprint4.Task0.V20.Lib\Tyuiu.ZaicevYaA.Sprint4.Task0.V20.Lib.csproj", "{47AF7E82-EC98-4769-BF09-A53AEEE5025E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task1", "Task1", "{FED6702E-A2FB-4999-AC5F-6291FD939347}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.ZaicevYaA.Sprint4.Task1.V18", "Tyuiu.ZaicevYaA.Sprint4.Task1.V18\Tyuiu.ZaicevYaA.Sprint4.Task1.V18.csproj", "{12B043CD-3DDB-4F0E-9446-0603646B3C97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.ZaicevYaA.Sprint4.Task1.V18.Lib", "Tyuiu.ZaicevYaA.Sprint4.Task1.V18.Lib\Tyuiu.ZaicevYaA.Sprint4.Task1.V18.Lib.csproj", "{60834A56-E585-4BB9-92C9-E04B630532CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +29,14 @@ Global
 		{47AF7E82-EC98-4769-BF09-A53AEEE5025E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47AF7E82-EC98-4769-BF09-A53AEEE5025E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47AF7E82-EC98-4769-BF09-A53AEEE5025E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12B043CD-3DDB-4F0E-9446-0603646B3C97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12B043CD-3DDB-4F0E-9446-0603646B3C97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12B043CD-3DDB-4F0E-9446-0603646B3C97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12B043CD-3DDB-4F0E-9446-0603646B3C97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60834A56-E585-4BB9-92C9-E04B630532CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60834A56-E585-4BB9-92C9-E04B630532CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60834A56-E585-4BB9-92C9-E04B630532CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60834A56-E585-4BB9-92C9-E04B630532CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,5 +44,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{79B5DBC1-8B71-473C-BB04-DD222E2913A6} = {4F7E51E6-8CF6-4C35-BCB1-C667F727F999}
 		{47AF7E82-EC98-4769-BF09-A53AEEE5025E} = {4F7E51E6-8CF6-4C35-BCB1-C667F727F999}
+		{12B043CD-3DDB-4F0E-9446-0603646B3C97} = {FED6702E-A2FB-4999-AC5F-6291FD939347}
+		{60834A56-E585-4BB9-92C9-E04B630532CC} = {FED6702E-A2FB-4999-AC5F-6291FD939347}
 	EndGlobalSection
 EndGlobal
