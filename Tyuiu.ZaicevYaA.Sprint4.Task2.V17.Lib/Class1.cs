@@ -1,4 +1,5 @@
 ﻿using tyuiu.cources.programming.interfaces.Sprint4;
+
 namespace Tyuiu.ZaicevYaA.Sprint4.Task2.V17.Lib
 {
     public class Class1 : ISprint4Task2V17
@@ -8,16 +9,17 @@ namespace Tyuiu.ZaicevYaA.Sprint4.Task2.V17.Lib
             int product = 1;
             bool hasOdd = false;
 
-            for (int i = 0; i < array.Length; i++)
+            foreach (int element in array)
             {
-                if (array[i] % 2 != 0)
+                if (element % 2 != 0)
                 {
-                    product *= array[i];
+                    product *= element;
                     hasOdd = true;
                 }
             }
 
-            // Если не было нечетных элементов, возвращаем 0
+            // Если нечетных элементов нет, возвращаем 0
+            // Или можно вернуть 1, в зависимости от требований
             return hasOdd ? product : 0;
         }
     }
