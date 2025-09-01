@@ -6,21 +6,25 @@ namespace Tyuiu.ZaicevYaA.Sprint4.Task2.V17.Lib
     {
         public int Calculate(int[] array)
         {
-            int product = 1;
-            bool hasOdd = false;
+            int result = 1;
+            int count = 0;
 
-            foreach (int element in array)
+            for (int i = 0; i < array.Length; i++)
             {
-                if (element % 2 != 0)
+                if (IsOdd(array[i]))
                 {
-                    product *= element;
-                    hasOdd = true;
+                    result *= array[i];
+                    count++;
                 }
             }
 
-            // Если нечетных элементов нет, возвращаем 0
-            // Или можно вернуть 1, в зависимости от требований
-            return hasOdd ? product : 0;
+            // Если нечетных элементов нет, возвращаем 1
+            return count > 0 ? result : 1;
+        }
+
+        private bool IsOdd(int number)
+        {
+            return (number & 1) == 1; // Побитовая проверка на нечетность
         }
     }
 }
