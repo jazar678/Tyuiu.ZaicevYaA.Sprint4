@@ -6,25 +6,22 @@ namespace Tyuiu.ZaicevYaA.Sprint4.Task2.V17.Lib
     {
         public int Calculate(int[] array)
         {
-            int result = 1;
-            int count = 0;
-
-            for (int i = 0; i < array.Length; i++)
-            {
-                if (IsOdd(array[i]))
-                {
-                    result *= array[i];
-                    count++;
-                }
-            }
-
-            // Если нечетных элементов нет, возвращаем 1
-            return count > 0 ? result : 1;
+            return CalculateProduct(array, 0);
         }
 
-        private bool IsOdd(int number)
+        private int CalculateProduct(int[] array, int index)
         {
-            return (number & 1) == 1; // Побитовая проверка на нечетность
+            // Базовый случай - достигли конца массива
+            if (index >= array.Length)
+                return 1;
+
+            int currentProduct = CalculateProduct(array, index + 1);
+
+            // Если текущий элемент нечетный, умножаем на него
+            if (array[index] % 2 != 0)
+                return array[index] * currentProduct;
+            else
+                return currentProduct;
         }
     }
 }
